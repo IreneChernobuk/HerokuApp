@@ -22,9 +22,6 @@ public class PropertyManager {
     public String get(String propertyName) {
         loadData();
         return prop.getProperty(propertyName);
-
-
-
     }
 }
 
