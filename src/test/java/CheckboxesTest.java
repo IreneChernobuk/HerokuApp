@@ -5,29 +5,32 @@ import org.testng.annotations.Test;
 
 public class CheckboxesTest extends BaseTest {
     @Test
-    public void CheckNotSelectCheckboxe1() {
+    public void checkNotSelectCheckboxe1() {
         driver.get(Urls.REGISTER_FORM_URL_CHECK);
         WebElement element = driver.findElement(By.xpath("//form/input[1]"));
         boolean checkboxNotSelected = element.isSelected();
         Assert.assertFalse(checkboxNotSelected, "Checkbox active");
     }
+
     @Test
-    public void CheckSelectCheckboxe1() {
+    public void checkSelectCheckboxe1() {
         driver.get(Urls.REGISTER_FORM_URL_CHECK);
         WebElement element = driver.findElement(By.xpath("//form/input[1]"));
         element.click();
         boolean checkboxSelected = element.isSelected();
         Assert.assertTrue(checkboxSelected, "Checkbox not active");
     }
+
     @Test
-    public void CheckSelectCheckboxe2() {
+    public void checkSelectCheckboxe2() {
         driver.get(Urls.REGISTER_FORM_URL_CHECK);
         WebElement element = driver.findElement(By.xpath("//form/input[2]"));
         boolean checkboxSelected = element.isSelected();
         Assert.assertTrue(checkboxSelected, "Checkbox not active");
     }
+
     @Test
-    public void CheckNotSelectCheckboxe2() {
+    public void checkNotSelectCheckboxe2() {
         driver.get(Urls.REGISTER_FORM_URL_CHECK);
         WebElement element = driver.findElement(By.xpath("//form/input[2]"));
         element.click();
