@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 public class CheckboxesTest extends BaseTest {
     @Test
-    public void checkNotSelectCheckboxe1() {
+    public void checkNotSelectCheckboxe1Test() {
         driver.get(Urls.REGISTER_FORM_URL_CHECK);
         WebElement element = driver.findElement(By.xpath("//form/input[1]"));
         boolean checkboxNotSelected = element.isSelected();
@@ -13,7 +13,7 @@ public class CheckboxesTest extends BaseTest {
     }
 
     @Test
-    public void checkSelectCheckboxe1() {
+    public void checkSelectCheckboxe1Test() {
         driver.get(Urls.REGISTER_FORM_URL_CHECK);
         WebElement element = driver.findElement(By.xpath("//form/input[1]"));
         element.click();
@@ -22,7 +22,7 @@ public class CheckboxesTest extends BaseTest {
     }
 
     @Test
-    public void checkSelectCheckboxe2() {
+    public void checkSelectCheckboxe2Test() {
         driver.get(Urls.REGISTER_FORM_URL_CHECK);
         WebElement element = driver.findElement(By.xpath("//form/input[2]"));
         boolean checkboxSelected = element.isSelected();
@@ -30,7 +30,7 @@ public class CheckboxesTest extends BaseTest {
     }
 
     @Test
-    public void checkNotSelectCheckboxe2() {
+    public void checkNotSelectCheckboxe2Test() {
         driver.get(Urls.REGISTER_FORM_URL_CHECK);
         WebElement element = driver.findElement(By.xpath("//form/input[2]"));
         element.click();

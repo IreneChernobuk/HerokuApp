@@ -4,7 +4,7 @@ import org.testng.annotations.Test;
 
 public class HerokuApp extends BaseTest {
     @Test
-    public void AddAndDeleteTest() {
+    public void addAndDeleteTest() {
         driver.get(Urls.REGISTER_FORM_URL_ADD);
         driver.findElement(By.cssSelector("button[onclick*='add']")).click();
         driver.findElement(By.cssSelector("button[onclick*='add']")).click();

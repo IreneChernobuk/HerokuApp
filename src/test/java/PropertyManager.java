@@ -24,4 +24,3 @@ public class PropertyManager {
         return prop.getProperty(propertyName);
     }
 }
-
