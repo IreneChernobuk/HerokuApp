@@ -1,0 +1,8 @@
+public class Urls {
+    public static final String REGISTER_FORM_URL_ADD = "http://the-internet.herokuapp.com/add_remove_elements/";
+    public static final String REGISTER_FORM_URL_TABLE = "http://the-internet.herokuapp.com/tables";
+    public static final String REGISTER_FORM_URL_CHECK = "http://the-internet.herokuapp.com/checkboxes";
+    public static final String REGISTER_FORM_URL_INPUTS = "http://the-internet.herokuapp.com/inputs";
+    public static final String REGISTER_FORM_URL_TYPOS = "http://the-internet.herokuapp.com/typos";
+    public static final String REGISTER_FORM_URL_NOTMES = "http://the-internet.herokuapp.com/notification_message_rendered";
+}
