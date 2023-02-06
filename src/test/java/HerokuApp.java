@@ -1,8 +1,12 @@
+import Tests.BaseTest;
+import constants.Urls;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class HerokuApp extends BaseTest {
+    WebDriver driver;
     @Test
     public void addAndDeleteTest() {
         driver.get(Urls.REGISTER_FORM_URL_ADD);

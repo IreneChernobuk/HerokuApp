@@ -1,3 +1,5 @@
+package Tests;
+
 import com.github.javafaker.Faker;
 
 public class FakerMessageGenerate {
