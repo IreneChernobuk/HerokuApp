@@ -7,4 +7,5 @@ public class Urls {
     public static final String REGISTER_FORM_URL_INPUTS = "http://the-internet.herokuapp.com/inputs";
     public static final String REGISTER_FORM_URL_TYPOS = "http://the-internet.herokuapp.com/typos";
     public static final String REGISTER_FORM_URL_NOTMES = "http://the-internet.herokuapp.com/notification_message_rendered";
+    public static final String REGISTER_FORM_URL_ALERT = "http://the-internet.herokuapp.com/javascript_alerts";
 }
