@@ -14,6 +14,8 @@ public class DroppablePage extends BasePage {
     @FindBy(xpath = "//div[@id='droppable']/p")
     private WebElement text_actual;
 
+    @FindBy(css = "..demo-frame")
+    private WebElement frame1;
 
     public DroppablePage(WebDriver driver) {
         super(driver);
@@ -29,10 +31,6 @@ public class DroppablePage extends BasePage {
 
     public void openDroppablePage() {
         driver.get(Urls.REGISTER_FORM_URL_DROPP);
-    }
-
-    public void switchFrame() {
-        driver.switchTo().frame(droppable);
     }
 
     public String receiveText() {
