@@ -1,6 +1,5 @@
 package Tests;
 
-import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pagefactorypahes.DropdownPage;
@@ -11,8 +10,7 @@ public class DropdownTest extends BaseTest {
     public void selectFirstOptionTest() {
         DropdownPage dropdown = new DropdownPage(driver);
         dropdown.openDropdownPage();
-        Select select = new Select(dropdown.getSelect());
-        select.getFirstSelectedOption();
+        dropdown.goToOption1();
         Assert.assertTrue(dropdown.isOption1Selected(), "Option 1 isn't selected");
     }
 
@@ -20,8 +18,7 @@ public class DropdownTest extends BaseTest {
     public void selectSecondOptionTest() {
         DropdownPage dropdown = new DropdownPage(driver);
         dropdown.openDropdownPage();
-        Select select = new Select(dropdown.getSelect());
-        select.selectByValue("1");
+        dropdown.goToOption2();
         Assert.assertTrue(dropdown.isOption2Selected(), "Option 1 isn't selected");
     }
 
@@ -29,8 +26,7 @@ public class DropdownTest extends BaseTest {
     public void selectThirdOptionTest() {
         DropdownPage dropdown = new DropdownPage(driver);
         dropdown.openDropdownPage();
-        Select select = new Select(dropdown.getSelect());
-        select.selectByValue("2");
+        dropdown.goToOption3();
         Assert.assertTrue(dropdown.isOption3Selected(), "Option 1 isn't selected");
     }
 }
