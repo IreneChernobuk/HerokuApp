@@ -20,10 +20,6 @@ public class DropdownPage extends BasePage {
         super(driver);
     }
 
-    public WebElement getSelect() {
-        return select_element;
-    }
-
     public void openDropdownPage() {
         driver.get(Urls.REGISTER_FORM_URL_DROPDOWN);
     }
